@@ -1,0 +1,17 @@
+
+
+entity Author {
+name String,
+birthDate LocalDate
+
+}
+
+entity Book {
+title String,
+description String,
+price BigDecimal
+}
+
+relationship OneToMany {
+    Author to Book
+}
